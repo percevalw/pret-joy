@@ -89,6 +89,8 @@ ENV/
 # Rope project settings
 .ropeproject
 
+.husky
+
 # =========================
 # Operating System Files
 # =========================

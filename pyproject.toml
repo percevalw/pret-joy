@@ -47,5 +47,8 @@ editable-build-kwargs = { "build_cmd" = "build:dev", "npm" = ["jlpm"] }
 [tool.hatch.build]
 artifacts = ["pret"]
 
+[tool.hatch.build.targets.wheel]
+packages = ["pret"]
+
 [tool.hatch.build.targets.wheel.shared-data]
 "pret/ui/joy/js-extension" = "share/jupyter/labextensions/pret_joy"

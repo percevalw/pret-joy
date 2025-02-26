@@ -7,31 +7,35 @@ module.exports = {
       {
         test: /\.[jt]sx?$/,
         use: "ts-loader",
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
+      /*{
+        test: /\.(css)$/,
+        use: ["style-loader", "css-loader"]
+      },*/
       {
         test: /\.py$/,
         type: "asset/inline",
         generator: {
-          dataUrl: content => content.toString()
-        }
+          dataUrl: (content) => content.toString(),
+        },
       },
       {
         test: /\.m?js/,
         resolve: {
-          fullySpecified: false
-        }
-      }
-    ]
+          fullySpecified: false,
+        },
+      },
+    ],
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".py", ".css", ".mjs"],
   },
   plugins: [],
   optimization: {
-    usedExports: true
+    usedExports: true,
   },
   cache: {
-    type: "filesystem"
-  }
+    type: "filesystem",
+  },
 };
