@@ -1,5 +1,5 @@
 [project]
-name = "pret_joy"
+name = "pret-joy"
 description = "MUI Joy plugin for Pret"
 authors = [
     { name = "Perceval Wajsbürt", email = "perceval.wajsburt@gmail.com" }
@@ -30,7 +30,7 @@ extend-exclude = "stubs"
 
 # ----- Build configuration -----
 [tool.hatch.version]
-path = "pret/ui/joy/version.py"
+path = "pret/ui/joy/__init__.py"
 
 [build-system]
 requires = ["hatchling", "jupyterlab<4.0.0"]
@@ -51,4 +51,4 @@ artifacts = ["pret"]
 packages = ["pret"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"pret/ui/joy/js-extension" = "share/jupyter/labextensions/pret_joy"
+"pret/ui/joy/js-extension" = "share/jupyter/labextensions/pret-joy"

@@ -1,6 +1,6 @@
 {
-  "name": "pret_joy",
-  "version": "1.0.0",
+  "name": "pret-joy",
+  "version": "5.0.0-beta.16",
   "description": "MUI Joy plugin for Pret",
   "main": "client/index.js",
   "repository": "https://github.com/percevalw/pret",
@@ -19,7 +19,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/joy": "^5.0.0-beta.16"
+    "@mui/joy": "5.0.0-beta.16"
   },
   "devDependencies": {
     "@jupyterlab/builder": "^3.6.5",
@@ -32,7 +32,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-loader": "^9.4.4",
-    "typescript": "4.5.5"
+    "typescript": "^5.8.2"
   },
   "jupyterlab": {
     "extension": "client/plugin.ts",

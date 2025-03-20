@@ -18,7 +18,6 @@ function updateMaterialUITheme() {
 // Create a new MutationObserver instance to listen for changes in the body tag's attributes
 const observer = new MutationObserver(mutations => {
     mutations.forEach(mutation => {
-        console.log("Got mutation", mutation)
         if (mutation.type === 'attributes' && mutation.attributeName === 'data-jp-theme-light') {
             updateMaterialUITheme();
         }
@@ -26,7 +25,7 @@ const observer = new MutationObserver(mutations => {
 });
 
 const plugin = {
-    id: "pret_joy:plugin", // app
+    id: "pret-joy:plugin", // app
     activate: () => null,
     autoStart: true,
 };
