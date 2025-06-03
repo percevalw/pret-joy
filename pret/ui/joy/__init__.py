@@ -1,8 +1,8 @@
 
 import sys
-from typing import Any, Union
+from typing import Any, Union, List
 from pret.render import stub_component
-from pret.bridge import make_stub_js_module, js, pyodide
+from pret.marshal import js, make_stub_js_module, marshal_as
 
 __version__ = "5.0.0-beta.16"
 _py_package_name = "pret-joy"
@@ -911,339 +911,339 @@ def Typography(*children, about: Any, access_key: Any, align_content: Any, align
 def useThemeProps(*children, name: str, props: Any, key: Union[str, int]):
     """"""
 
+
+@marshal_as(js.JoyUI.createFilterOptions)
 def create_filter_options(config: Any=None):
     """"""
-    return js.JoyUI.createFilterOptions(*pyodide.ffi.to_js([config], dict_converter=js.Object.fromEntries));
-create_filter_options._inner_fn = js.JoyUI.createFilterOptions
+
+@marshal_as(js.JoyUI.createGetCssVar)
 def create_get_css_var(css_var_prefix: str=None):
     """"""
-    return js.JoyUI.createGetCssVar(*pyodide.ffi.to_js([css_var_prefix], dict_converter=js.Object.fromEntries));
-create_get_css_var._inner_fn = js.JoyUI.createGetCssVar
+
+@marshal_as(js.JoyUI.extendTheme)
 def extend_theme(theme_options: Any=None):
     """"""
-    return js.JoyUI.extendTheme(*pyodide.ffi.to_js([theme_options], dict_converter=js.Object.fromEntries));
-extend_theme._inner_fn = js.JoyUI.extendTheme
+
+@marshal_as(js.JoyUI.getAccordionDetailsUtilityClass)
 def get_accordion_details_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAccordionDetailsUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_accordion_details_utility_class._inner_fn = js.JoyUI.getAccordionDetailsUtilityClass
+
+@marshal_as(js.JoyUI.getAccordionGroupUtilityClass)
 def get_accordion_group_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAccordionGroupUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_accordion_group_utility_class._inner_fn = js.JoyUI.getAccordionGroupUtilityClass
+
+@marshal_as(js.JoyUI.getAccordionSummaryUtilityClass)
 def get_accordion_summary_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAccordionSummaryUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_accordion_summary_utility_class._inner_fn = js.JoyUI.getAccordionSummaryUtilityClass
+
+@marshal_as(js.JoyUI.getAccordionUtilityClass)
 def get_accordion_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAccordionUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_accordion_utility_class._inner_fn = js.JoyUI.getAccordionUtilityClass
+
+@marshal_as(js.JoyUI.getAlertUtilityClass)
 def get_alert_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAlertUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_alert_utility_class._inner_fn = js.JoyUI.getAlertUtilityClass
+
+@marshal_as(js.JoyUI.getAspectRatioUtilityClass)
 def get_aspect_ratio_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAspectRatioUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_aspect_ratio_utility_class._inner_fn = js.JoyUI.getAspectRatioUtilityClass
+
+@marshal_as(js.JoyUI.getAutocompleteListboxUtilityClass)
 def get_autocomplete_listbox_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAutocompleteListboxUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_autocomplete_listbox_utility_class._inner_fn = js.JoyUI.getAutocompleteListboxUtilityClass
+
+@marshal_as(js.JoyUI.getAutocompleteOptionUtilityClass)
 def get_autocomplete_option_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAutocompleteOptionUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_autocomplete_option_utility_class._inner_fn = js.JoyUI.getAutocompleteOptionUtilityClass
+
+@marshal_as(js.JoyUI.getAutocompleteUtilityClass)
 def get_autocomplete_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAutocompleteUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_autocomplete_utility_class._inner_fn = js.JoyUI.getAutocompleteUtilityClass
+
+@marshal_as(js.JoyUI.getAvatarGroupUtilityClass)
 def get_avatar_group_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAvatarGroupUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_avatar_group_utility_class._inner_fn = js.JoyUI.getAvatarGroupUtilityClass
+
+@marshal_as(js.JoyUI.getAvatarUtilityClass)
 def get_avatar_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getAvatarUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_avatar_utility_class._inner_fn = js.JoyUI.getAvatarUtilityClass
+
+@marshal_as(js.JoyUI.getBadgeUtilityClass)
 def get_badge_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getBadgeUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_badge_utility_class._inner_fn = js.JoyUI.getBadgeUtilityClass
+
+@marshal_as(js.JoyUI.getBreadcrumbsUtilityClass)
 def get_breadcrumbs_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getBreadcrumbsUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_breadcrumbs_utility_class._inner_fn = js.JoyUI.getBreadcrumbsUtilityClass
+
+@marshal_as(js.JoyUI.getButtonGroupUtilityClass)
 def get_button_group_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getButtonGroupUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_button_group_utility_class._inner_fn = js.JoyUI.getButtonGroupUtilityClass
+
+@marshal_as(js.JoyUI.getButtonUtilityClass)
 def get_button_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getButtonUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_button_utility_class._inner_fn = js.JoyUI.getButtonUtilityClass
+
+@marshal_as(js.JoyUI.getCardActionsUtilityClass)
 def get_card_actions_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getCardActionsUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_card_actions_utility_class._inner_fn = js.JoyUI.getCardActionsUtilityClass
+
+@marshal_as(js.JoyUI.getCardContentUtilityClass)
 def get_card_content_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getCardContentUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_card_content_utility_class._inner_fn = js.JoyUI.getCardContentUtilityClass
+
+@marshal_as(js.JoyUI.getCardCoverUtilityClass)
 def get_card_cover_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getCardCoverUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_card_cover_utility_class._inner_fn = js.JoyUI.getCardCoverUtilityClass
+
+@marshal_as(js.JoyUI.getCardOverflowUtilityClass)
 def get_card_overflow_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getCardOverflowUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_card_overflow_utility_class._inner_fn = js.JoyUI.getCardOverflowUtilityClass
+
+@marshal_as(js.JoyUI.getCardUtilityClass)
 def get_card_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getCardUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_card_utility_class._inner_fn = js.JoyUI.getCardUtilityClass
+
+@marshal_as(js.JoyUI.getCheckboxUtilityClass)
 def get_checkbox_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getCheckboxUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_checkbox_utility_class._inner_fn = js.JoyUI.getCheckboxUtilityClass
+
+@marshal_as(js.JoyUI.getChipDeleteUtilityClass)
 def get_chip_delete_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getChipDeleteUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_chip_delete_utility_class._inner_fn = js.JoyUI.getChipDeleteUtilityClass
+
+@marshal_as(js.JoyUI.getChipUtilityClass)
 def get_chip_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getChipUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_chip_utility_class._inner_fn = js.JoyUI.getChipUtilityClass
+
+@marshal_as(js.JoyUI.getCircularProgressUtilityClass)
 def get_circular_progress_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getCircularProgressUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_circular_progress_utility_class._inner_fn = js.JoyUI.getCircularProgressUtilityClass
+
+@marshal_as(js.JoyUI.getContainerUtilityClass)
 def get_container_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getContainerUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_container_utility_class._inner_fn = js.JoyUI.getContainerUtilityClass
+
+@marshal_as(js.JoyUI.getDialogActionsUtilityClass)
 def get_dialog_actions_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getDialogActionsUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_dialog_actions_utility_class._inner_fn = js.JoyUI.getDialogActionsUtilityClass
+
+@marshal_as(js.JoyUI.getDialogContentUtilityClass)
 def get_dialog_content_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getDialogContentUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_dialog_content_utility_class._inner_fn = js.JoyUI.getDialogContentUtilityClass
+
+@marshal_as(js.JoyUI.getDialogTitleUtilityClass)
 def get_dialog_title_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getDialogTitleUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_dialog_title_utility_class._inner_fn = js.JoyUI.getDialogTitleUtilityClass
+
+@marshal_as(js.JoyUI.getDividerUtilityClass)
 def get_divider_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getDividerUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_divider_utility_class._inner_fn = js.JoyUI.getDividerUtilityClass
+
+@marshal_as(js.JoyUI.getDrawerUtilityClass)
 def get_drawer_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getDrawerUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_drawer_utility_class._inner_fn = js.JoyUI.getDrawerUtilityClass
+
+@marshal_as(js.JoyUI.getFormControlUtilityClass)
 def get_form_control_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getFormControlUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_form_control_utility_class._inner_fn = js.JoyUI.getFormControlUtilityClass
+
+@marshal_as(js.JoyUI.getFormHelperTextUtilityClass)
 def get_form_helper_text_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getFormHelperTextUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_form_helper_text_utility_class._inner_fn = js.JoyUI.getFormHelperTextUtilityClass
+
+@marshal_as(js.JoyUI.getFormLabelUtilityClass)
 def get_form_label_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getFormLabelUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_form_label_utility_class._inner_fn = js.JoyUI.getFormLabelUtilityClass
+
+@marshal_as(js.JoyUI.getGridUtilityClass)
 def get_grid_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getGridUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_grid_utility_class._inner_fn = js.JoyUI.getGridUtilityClass
+
+@marshal_as(js.JoyUI.getIconButtonUtilityClass)
 def get_icon_button_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getIconButtonUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_icon_button_utility_class._inner_fn = js.JoyUI.getIconButtonUtilityClass
+
+@marshal_as(js.JoyUI.getInputUtilityClass)
 def get_input_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getInputUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_input_utility_class._inner_fn = js.JoyUI.getInputUtilityClass
+
+@marshal_as(js.JoyUI.getLinearProgressUtilityClass)
 def get_linear_progress_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getLinearProgressUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_linear_progress_utility_class._inner_fn = js.JoyUI.getLinearProgressUtilityClass
+
+@marshal_as(js.JoyUI.getLinkUtilityClass)
 def get_link_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getLinkUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_link_utility_class._inner_fn = js.JoyUI.getLinkUtilityClass
+
+@marshal_as(js.JoyUI.getListDividerUtilityClass)
 def get_list_divider_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getListDividerUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_list_divider_utility_class._inner_fn = js.JoyUI.getListDividerUtilityClass
+
+@marshal_as(js.JoyUI.getListItemButtonUtilityClass)
 def get_list_item_button_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getListItemButtonUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_list_item_button_utility_class._inner_fn = js.JoyUI.getListItemButtonUtilityClass
+
+@marshal_as(js.JoyUI.getListItemContentUtilityClass)
 def get_list_item_content_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getListItemContentUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_list_item_content_utility_class._inner_fn = js.JoyUI.getListItemContentUtilityClass
+
+@marshal_as(js.JoyUI.getListItemDecoratorUtilityClass)
 def get_list_item_decorator_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getListItemDecoratorUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_list_item_decorator_utility_class._inner_fn = js.JoyUI.getListItemDecoratorUtilityClass
+
+@marshal_as(js.JoyUI.getListItemUtilityClass)
 def get_list_item_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getListItemUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_list_item_utility_class._inner_fn = js.JoyUI.getListItemUtilityClass
+
+@marshal_as(js.JoyUI.getListSubheaderUtilityClass)
 def get_list_subheader_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getListSubheaderUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_list_subheader_utility_class._inner_fn = js.JoyUI.getListSubheaderUtilityClass
+
+@marshal_as(js.JoyUI.getListUtilityClass)
 def get_list_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getListUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_list_utility_class._inner_fn = js.JoyUI.getListUtilityClass
+
+@marshal_as(js.JoyUI.getMenuButtonUtilityClass)
 def get_menu_button_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getMenuButtonUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_menu_button_utility_class._inner_fn = js.JoyUI.getMenuButtonUtilityClass
+
+@marshal_as(js.JoyUI.getMenuItemUtilityClass)
 def get_menu_item_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getMenuItemUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_menu_item_utility_class._inner_fn = js.JoyUI.getMenuItemUtilityClass
+
+@marshal_as(js.JoyUI.getMenuListUtilityClass)
 def get_menu_list_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getMenuListUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_menu_list_utility_class._inner_fn = js.JoyUI.getMenuListUtilityClass
+
+@marshal_as(js.JoyUI.getMenuUtilityClass)
 def get_menu_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getMenuUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_menu_utility_class._inner_fn = js.JoyUI.getMenuUtilityClass
+
+@marshal_as(js.JoyUI.getModalCloseUtilityClass)
 def get_modal_close_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getModalCloseUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_modal_close_utility_class._inner_fn = js.JoyUI.getModalCloseUtilityClass
+
+@marshal_as(js.JoyUI.getModalDialogUtilityClass)
 def get_modal_dialog_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getModalDialogUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_modal_dialog_utility_class._inner_fn = js.JoyUI.getModalDialogUtilityClass
+
+@marshal_as(js.JoyUI.getModalOverflowUtilityClass)
 def get_modal_overflow_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getModalOverflowUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_modal_overflow_utility_class._inner_fn = js.JoyUI.getModalOverflowUtilityClass
+
+@marshal_as(js.JoyUI.getModalUtilityClass)
 def get_modal_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getModalUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_modal_utility_class._inner_fn = js.JoyUI.getModalUtilityClass
+
+@marshal_as(js.JoyUI.getOptionUtilityClass)
 def get_option_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getOptionUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_option_utility_class._inner_fn = js.JoyUI.getOptionUtilityClass
+
+@marshal_as(js.JoyUI.getRadioGroupUtilityClass)
 def get_radio_group_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getRadioGroupUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_radio_group_utility_class._inner_fn = js.JoyUI.getRadioGroupUtilityClass
+
+@marshal_as(js.JoyUI.getRadioUtilityClass)
 def get_radio_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getRadioUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_radio_utility_class._inner_fn = js.JoyUI.getRadioUtilityClass
+
+@marshal_as(js.JoyUI.getScopedCssBaselineUtilityClass)
 def get_scoped_css_baseline_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getScopedCssBaselineUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_scoped_css_baseline_utility_class._inner_fn = js.JoyUI.getScopedCssBaselineUtilityClass
+
+@marshal_as(js.JoyUI.getSelectUtilityClass)
 def get_select_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getSelectUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_select_utility_class._inner_fn = js.JoyUI.getSelectUtilityClass
+
+@marshal_as(js.JoyUI.getSheetUtilityClass)
 def get_sheet_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getSheetUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_sheet_utility_class._inner_fn = js.JoyUI.getSheetUtilityClass
+
+@marshal_as(js.JoyUI.getSkeletonUtilityClass)
 def get_skeleton_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getSkeletonUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_skeleton_utility_class._inner_fn = js.JoyUI.getSkeletonUtilityClass
+
+@marshal_as(js.JoyUI.getSliderUtilityClass)
 def get_slider_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getSliderUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_slider_utility_class._inner_fn = js.JoyUI.getSliderUtilityClass
+
+@marshal_as(js.JoyUI.getSnackbarUtilityClass)
 def get_snackbar_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getSnackbarUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_snackbar_utility_class._inner_fn = js.JoyUI.getSnackbarUtilityClass
+
+@marshal_as(js.JoyUI.getStackUtilityClass)
 def get_stack_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getStackUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_stack_utility_class._inner_fn = js.JoyUI.getStackUtilityClass
+
+@marshal_as(js.JoyUI.getStepButtonUtilityClass)
 def get_step_button_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getStepButtonUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_step_button_utility_class._inner_fn = js.JoyUI.getStepButtonUtilityClass
+
+@marshal_as(js.JoyUI.getStepIndicatorUtilityClass)
 def get_step_indicator_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getStepIndicatorUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_step_indicator_utility_class._inner_fn = js.JoyUI.getStepIndicatorUtilityClass
+
+@marshal_as(js.JoyUI.getStepperUtilityClass)
 def get_stepper_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getStepperUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_stepper_utility_class._inner_fn = js.JoyUI.getStepperUtilityClass
+
+@marshal_as(js.JoyUI.getStepUtilityClass)
 def get_step_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getStepUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_step_utility_class._inner_fn = js.JoyUI.getStepUtilityClass
+
+@marshal_as(js.JoyUI.getSvgIconUtilityClass)
 def get_svg_icon_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getSvgIconUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_svg_icon_utility_class._inner_fn = js.JoyUI.getSvgIconUtilityClass
+
+@marshal_as(js.JoyUI.getSwitchUtilityClass)
 def get_switch_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getSwitchUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_switch_utility_class._inner_fn = js.JoyUI.getSwitchUtilityClass
+
+@marshal_as(js.JoyUI.getTableUtilityClass)
 def get_table_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getTableUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_table_utility_class._inner_fn = js.JoyUI.getTableUtilityClass
+
+@marshal_as(js.JoyUI.getTabListUtilityClass)
 def get_tab_list_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getTabListUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_tab_list_utility_class._inner_fn = js.JoyUI.getTabListUtilityClass
+
+@marshal_as(js.JoyUI.getTabPanelUtilityClass)
 def get_tab_panel_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getTabPanelUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_tab_panel_utility_class._inner_fn = js.JoyUI.getTabPanelUtilityClass
+
+@marshal_as(js.JoyUI.getTabsUtilityClass)
 def get_tabs_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getTabsUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_tabs_utility_class._inner_fn = js.JoyUI.getTabsUtilityClass
+
+@marshal_as(js.JoyUI.getTabUtilityClass)
 def get_tab_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getTabUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_tab_utility_class._inner_fn = js.JoyUI.getTabUtilityClass
+
+@marshal_as(js.JoyUI.getTextareaUtilityClass)
 def get_textarea_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getTextareaUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_textarea_utility_class._inner_fn = js.JoyUI.getTextareaUtilityClass
+
+@marshal_as(js.JoyUI.getToggleButtonGroupUtilityClass)
 def get_toggle_button_group_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getToggleButtonGroupUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_toggle_button_group_utility_class._inner_fn = js.JoyUI.getToggleButtonGroupUtilityClass
+
+@marshal_as(js.JoyUI.getTooltipUtilityClass)
 def get_tooltip_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getTooltipUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_tooltip_utility_class._inner_fn = js.JoyUI.getTooltipUtilityClass
+
+@marshal_as(js.JoyUI.getTypographyUtilityClass)
 def get_typography_utility_class(slot: str=None):
     """"""
-    return js.JoyUI.getTypographyUtilityClass(*pyodide.ffi.to_js([slot], dict_converter=js.Object.fromEntries));
-get_typography_utility_class._inner_fn = js.JoyUI.getTypographyUtilityClass
+
+@marshal_as(js.JoyUI.styled)
 def styled(component: Any=None, options: Any=None):
     """"""
-    return js.JoyUI.styled(*pyodide.ffi.to_js([component, options], dict_converter=js.Object.fromEntries));
-styled._inner_fn = js.JoyUI.styled
+
+@marshal_as(js.JoyUI.useColorScheme)
 def use_color_scheme():
     """"""
-    return js.JoyUI.useColorScheme(*pyodide.ffi.to_js([], dict_converter=js.Object.fromEntries));
-use_color_scheme._inner_fn = js.JoyUI.useColorScheme
+
+@marshal_as(js.JoyUI.useTheme)
 def use_theme():
     """"""
-    return js.JoyUI.useTheme(*pyodide.ffi.to_js([], dict_converter=js.Object.fromEntries));
-use_theme._inner_fn = js.JoyUI.useTheme
