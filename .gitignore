@@ -159,9 +159,6 @@ pret_joy/**/js-base
 client/**/*.js
 client/**/*.js.map
 
-# JS globals
-client/globals.ts
-
 .vscode
 
 # Pycharm

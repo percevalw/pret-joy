@@ -2,7 +2,7 @@
   "name": "pret-joy",
   "version": "5.0.0-beta.52",
   "description": "MUI Joy plugin for Pret",
-  "main": "client/index.js",
+  "main": "client/index.ts",
   "repository": "https://github.com/percevalw/pret",
   "author": "Perceval Wajsbürt <perceval.wajsburt@gmail.com>",
   "scripts": {
