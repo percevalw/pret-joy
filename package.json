@@ -8,7 +8,7 @@
   "scripts": {
     "build": "jlpm clean && jupyter labextension build .",
     "build:dev": "jlpm clean && jupyter labextension build --development True .",
-    "clean": "rm -rf pret/ui/joy/js-extension lib",
+    "clean": "rm -rf pret_joy/js-extension lib",
     "prepare": "husky install"
   },
   "license": "Apache-2.0",
@@ -37,7 +37,7 @@
   "jupyterlab": {
     "extension": "client/plugin.ts",
     "schemaDir": "client/schema",
-    "outputDir": "pret/ui/joy/js-extension",
+    "outputDir": "pret_joy/js-extension",
     "webpackConfig": "./webpack.jupyter.js"
   },
   "browserslist": {

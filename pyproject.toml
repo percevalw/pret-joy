@@ -23,14 +23,14 @@ dev = [
 ]
 
 [tool.ruff]
-extend-exclude = ["**/stubs.py"]
+extend-exclude = ["pret_joy/"]
 
 [tool.black]
-extend-exclude = "stubs"
+extend-exclude = "pret_joy/"
 
 # ----- Build configuration -----
 [tool.hatch.version]
-path = "pret/ui/joy/__init__.py"
+path = "pret_joy/__init__.py"
 
 [build-system]
 requires = ["hatchling", "jupyterlab<4.0.0"]
@@ -45,10 +45,10 @@ build-kwargs = { "build_cmd" = "build", "npm" = ["jlpm"] }
 editable-build-kwargs = { "build_cmd" = "build:dev", "npm" = ["jlpm"] }
 
 [tool.hatch.build]
-artifacts = ["pret"]
+artifacts = ["pret_joy", "pret"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["pret"]
+packages = ["pret_joy", "pret"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"pret/ui/joy/js-extension" = "share/jupyter/labextensions/pret-joy"
+"pret_joy/js-extension" = "share/jupyter/labextensions/pret-joy"

@@ -154,8 +154,8 @@ package-lock.json
 **/coverage/
 
 # Compiled JS
-pret/**/js-extension
-pret/**/js-base
+pret_joy/**/js-extension
+pret_joy/**/js-base
 client/**/*.js
 client/**/*.js.map
 

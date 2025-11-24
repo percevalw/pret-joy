@@ -9,7 +9,11 @@ _py_package_name = "pret-joy"
 _js_package_name = "@mui/joy"
 _js_global_name = "JoyUI"
 
-make_stub_js_module("JoyUI", "pret-joy", "@mui/joy", __version__, __name__)
+def _register_stub_module(module_name: str = __name__) -> None:
+    make_stub_js_module(_js_global_name, _py_package_name, _js_package_name, __version__, module_name)
+
+
+_register_stub_module()
 
 if sys.version_info >= (3, 8):
     from typing import Literal
