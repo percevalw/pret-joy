@@ -4,7 +4,7 @@ from typing import Any, Union, List
 from pret.render import stub_component
 from pret.marshal import js, make_stub_js_module, marshal_as
 
-__version__ = "5.0.0-beta.52"
+__version__ = "5.0.0-beta.52.post1"
 _py_package_name = "pret-joy"
 _js_package_name = "@mui/joy"
 _js_global_name = "JoyUI"
